@@ -1,0 +1,284 @@
+[
+      {
+        "id": 1,
+        "title": "DevOps",
+        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "date": "2023-10-20",
+        "time": "2:00 PM - 4:00 PM",
+        "location": "Online",
+        "speaker": {
+          "name": "DevOps Expert",
+          "image": "instructor_image_url_here",
+          "experience": "Seasoned DevOps practitioner with a history of successful implementations.",
+          "graduation": "DevOps University",
+          "contact": "devopsexpert@example.com"
+        },
+        "description": "Master the principles of DevOps and streamline your software development processes.",
+        "learningObjectives": [
+          "Understand the core concepts of continuous integration and continuous deployment.",
+          "Learn best practices for automating software development and deployment.",
+          "Gain expertise in DevOps tools and technologies."
+        ],
+        "materials": ["DevOps Handbook", "CI/CD Tools Guide"],
+        "reviews": [
+          {
+            "user": "User123",
+            "rating": 5,
+            "comment": "Informative and well-structured workshop."
+          },
+          {
+            "user": "User456",
+            "rating": 4,
+            "comment": "Great insights into digital marketing strategies."
+          }
+        ],
+        "skill": "DevOps",
+        "topics": ["Continuous Integration", "Continuous Deployment", "Automation"],
+        "calendarDate": "2023-10-20",
+        "registrationDeadline": "2023-10-15",
+        "courseOverview": "This comprehensive DevOps course covers the fundamentals of continuous integration, continuous deployment, and automation in software development.",
+        "syllabus": {
+          "modules": 8,
+          "assignments": true,
+          "quizzes": true
+        },
+        "duration": "18 months",
+        "certification": "Upon successful completion, you'll receive a DevOps Certification.",
+        "communitySupport": "Join our dedicated community forum to connect with fellow learners and instructors for support."
+      },
+      {
+        "id": 2,
+        "title": "Leadership Development",
+        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "date": "2023-10-20",
+        "time": "2:00 PM - 4:00 PM",
+        "location": "Online",
+        "speaker": {
+          "name": "Leadership Coach",
+          "image": "instructor_image_url_here",
+          "experience": "Experienced leadership coach helping individuals unlock their leadership potential.",
+          "graduation": "Leadership Institute",
+          "contact": "leadershipcoach@example.com"
+        },
+        "description": "Enhance your leadership skills and become an effective leader in your organization.",
+        "learningObjectives": [
+          "Develop a deep understanding of various leadership styles.",
+          "Learn effective team-building strategies.",
+          "Master conflict resolution techniques for effective leadership."
+        ],
+        "materials": ["Leadership Excellence Handbook", "Leadership Case Studies"],
+        "reviews": [
+          {
+            "user": "User789",
+            "rating": 4,
+            "comment": "Valuable insights into leadership styles."
+          },
+          {
+            "user": "User101",
+            "rating": 5,
+            "comment": "Great course for aspiring leaders."
+          }
+        ],
+        "skill": "Leadership",
+        "topics": ["Leadership Styles", "Team Building", "Conflict Resolution"],
+        "calendarDate": "2023-10-20",
+        "registrationDeadline": "2023-10-15",
+        "courseOverview": "This Leadership Development course focuses on leadership styles, team dynamics, and effective conflict resolution techniques.",
+        "syllabus": {
+          "modules": 6,
+          "assignments": true,
+          "quizzes": true
+        },
+        "duration": "24 months",
+        "certification": "Upon completion, you'll receive a Leadership Development Certificate.",
+        "communitySupport": "Join our exclusive leadership community for ongoing support and networking."
+      },
+      {
+        "id": 3,
+        "title": "Data Science",
+        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "date": "2023-10-20",
+        "time": "2:00 PM - 4:00 PM",
+        "location": "Online",
+        "speaker": {
+          "name": "Data Scientist",
+          "image": "instructor_image_url_here",
+          "experience": "Experienced data scientist with expertise in machine learning and data analysis.",
+          "graduation": "Data Science University",
+          "contact": "datascientist@example.com"
+        },
+        "description": "Dive into the world of data science and harness the power of data-driven insights.",
+        "learningObjectives": [
+          "Master data analysis techniques.",
+          "Build machine learning models for predictive analysis.",
+          "Create impactful data visualizations."
+        ],
+        "materials": ["Data Science Toolkit", "Machine Learning Resources"],
+        "reviews": [
+          {
+            "user": "User246",
+            "rating": 4,
+            "comment": "Great course for aspiring data scientists."
+          },
+          {
+            "user": "User789",
+            "rating": 5,
+            "comment": "In-depth coverage of data science topics."
+          }
+        ],
+        "skill": "Data Science",
+        "topics": ["Data Analysis", "Machine Learning", "Data Visualization"],
+        "calendarDate": "2023-10-20",
+        "registrationDeadline": "2023-10-15",
+        "courseOverview": "This Data Science course explores data analysis, machine learning, and data visualization techniques.",
+        "syllabus": {
+          "modules": 10,
+          "assignments": true,
+          "quizzes": true
+        },
+        "duration": "24 months",
+        "certification": "Upon successful completion, you'll earn a Data Science Certificate.",
+        "communitySupport": "Join our data science community for collaboration and peer learning."
+      },
+      {
+        "id": 4,
+        "title": "Graphic Design",
+        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "date": "2023-10-20",
+        "time": "2:00 PM - 4:00 PM",
+        "location": "Online",
+        "speaker": {
+          "name": "Graphic Design Expert",
+          "image": "instructor_image_url_here",
+          "experience": "Talented graphic designer known for creating visually stunning designs.",
+          "graduation": "Design School",
+          "contact": "graphicdesigner@example.com"
+        },
+        "description": "Unlock your creativity and become a skilled graphic designer.",
+        "learningObjectives": [
+          "Master design principles and elements.",
+          "Proficiently use Adobe Creative Suite for design work.",
+          "Develop a strong sense of typography in graphic design."
+        ],
+        "materials": ["Graphic Design Software Guide", "Design Inspiration"],
+        "reviews": [
+          {
+            "user": "User567",
+            "rating": 5,
+            "comment": "Great course for aspiring graphic designers."
+          },
+          {
+            "user": "User890",
+            "rating": 4,
+            "comment": "I improved my design skills significantly."
+          }
+        ],
+        "skill": "Graphic Design",
+        "topics": ["Design Principles", "Adobe Creative Suite", "Typography"],
+        "calendarDate": "2023-10-20",
+        "registrationDeadline": "2023-10-15",
+        "courseOverview": "This Graphic Design course covers design principles, software tools, and typography in graphic design.",
+        "syllabus": {
+          "modules": 12,
+          "assignments": true,
+          "quizzes": true
+        },
+        "duration": "18 months",
+        "certification": "Upon successful completion, you'll receive a Graphic Design Certificate.",
+        "communitySupport": "Join our creative community to share your designs and get feedback."
+      },
+      {
+        "id": 5,
+        "title": "Public Speaking",
+        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "date": "2023-10-20",
+        "time": "2:00 PM - 4:00 PM",
+        "location": "Online",
+        "speaker": {
+          "name": "Public Speaking Coach",
+          "image": "instructor_image_url_here",
+          "experience": "Experienced public speaking coach helping individuals overcome stage fright.",
+          "graduation": "Communication School",
+          "contact": "publicspeakingcoach@example.com"
+        },
+        "description": "Hone your public speaking skills and become a confident and persuasive speaker.",
+        "learningObjectives": [
+          "Overcome stage fright and nervousness while speaking in public.",
+          "Master speech preparation techniques.",
+          "Engage and captivate your audience effectively."
+        ],
+        "materials": ["Public Speaking Handbook", "Presentation Mastery Guide"],
+        "reviews": [
+          {
+            "user": "User101",
+            "rating": 5,
+            "comment": "Boosted my confidence in public speaking."
+          },
+          {
+            "user": "User345",
+            "rating": 4,
+            "comment": "Effective strategies for engaging the audience."
+          }
+        ],
+        "skill": "Public Speaking",
+        "topics": ["Speech Preparation", "Body Language", "Audience Engagement"],
+        "calendarDate": "2023-10-20",
+        "registrationDeadline": "2023-10-15",
+        "courseOverview": "This Public Speaking course focuses on speech preparation, body language, and audience engagement techniques.",
+        "syllabus": {
+          "modules": 8,
+          "assignments": true,
+          "quizzes": true
+        },
+        "duration": "24 months",
+        "certification": "Upon completion, you'll receive a Public Speaking Certificate.",
+        "communitySupport": "Join our public speaking community for practice and feedback."
+      },
+      {
+        "id": 6,
+        "title": "Communication Skills",
+        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "date": "2023-10-20",
+        "time": "2:00 PM - 4:00 PM",
+        "location": "Online",
+        "speaker": {
+          "name": "Communication Expert",
+          "image": "instructor_image_url_here",
+          "experience": "Skilled communicator known for facilitating effective communication workshops.",
+          "graduation": "Communication Institute",
+          "contact": "communicationexpert@example.com"
+        },
+        "description": "Improve your communication skills and excel in personal and professional relationships.",
+        "learningObjectives": [
+          "Enhance verbal communication skills.",
+          "Master nonverbal communication cues.",
+          "Effectively resolve conflicts through communication."
+        ],
+        "materials": ["Communication Skills Workbook", "Effective Listening Resources"],
+        "reviews": [
+          {
+            "user": "User567",
+            "rating": 4,
+            "comment": "Helped me improve my communication at work."
+          },
+          {
+            "user": "User890",
+            "rating": 5,
+            "comment": "Highly recommend for anyone looking to boost their communication skills."
+          }
+        ],
+        "skill": "Communication Skills",
+        "topics": ["Verbal Communication", "Nonverbal Communication", "Conflict Resolution"],
+        "calendarDate": "2023-10-20",
+        "registrationDeadline": "2023-10-15",
+        "courseOverview": "This Communication Skills course covers verbal and nonverbal communication, as well as conflict resolution strategies.",
+        "syllabus": {
+          "modules": 7,
+          "assignments": true,
+          "quizzes": true
+        },
+        "duration": "24 months",
+        "certification": "Upon successful completion, you'll earn a Communication Skills Certificate.",
+        "communitySupport": "Join our communication skills community for practice and feedback."
+      }
+    ]

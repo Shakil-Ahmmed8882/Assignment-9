@@ -4,7 +4,7 @@ import Navbar from "./Header/Navbar";
 
 const Root = () => {
       return (
-            <div>
+            <div className="px-3">
                         <Navbar></Navbar>
                         <Outlet></Outlet>
             </div>
