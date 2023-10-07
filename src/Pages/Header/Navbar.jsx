@@ -1,14 +1,16 @@
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar">
+      <div className="flex items-center h-14">
         <div className="navbar-start">
-          <a className="navbar-item">Ripple UI</a>
+          <NavLink className="navbar-item">Ripple UI</NavLink>
         </div>
-        <div className="navbar-center">
-          <a className="navbar-item">Home</a>
-          <a className="navbar-item">About</a>
-          <a className="navbar-item">Contact</a>
+        <div>
+          <NavLink to='/' className="navbar-item">Home</NavLink>
+          <NavLink className="navbar-item">About</NavLink>
+          <NavLink className="navbar-item">Contact</NavLink>
         </div>
       </div>
     </div>

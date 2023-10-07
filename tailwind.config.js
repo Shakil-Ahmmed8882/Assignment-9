@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    colors:{
+      'primary-clr':'#db2777'
+    }
   },
   plugins: [require("daisyui")],
 }
