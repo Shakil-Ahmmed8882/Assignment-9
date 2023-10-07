@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
         <div className="flex gap-5 items-center">
           <NavLink to='/' >Home</NavLink>
-          <NavLink >About us</NavLink>
+          <NavLink to='/courses'>Courses</NavLink>
           {
            user? <NavLink onClick={handleLogOut} to='/sign-in' className='btn bg-primary-clr text-[#fff]'>Logout</NavLink>
             : <NavLink to='/sign-in' className='btn bg-primary-clr text-[#fff]'>Sign in</NavLink>

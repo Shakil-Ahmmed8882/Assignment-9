@@ -12,10 +12,11 @@ import Syllabus from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Contai
 import Events from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Events/Events";
 import Blog from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Blog/Blog";
 import Instructors from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Instructors/Instructors";
-import FAQ from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/FAQ/FAQ";
 import Certification from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Certification/Certification";
 import Feedback from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Feedback/Feedback";
 import HelpCenter from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Help-Center/HelpCenter";
+import Courses from "../Pages/🏠Home/Courses/Courses";
+import FAQ from "../Pages/🏠Home/FAQ";
 
 const router = createBrowserRouter([
   {
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
             element:<Profile></Profile>
           },
         ]
+      },
+      {
+        path:'/courses',
+        element:<Courses></Courses>
       },
       // Authenticaton
       {
