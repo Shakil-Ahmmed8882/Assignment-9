@@ -3,6 +3,9 @@ import Root from "../Pages/🟢 Root/Root";
 import Home from "../Pages/🏠Home/Home";
 import CourseDetails from "../Pages/🏠Home/Courses/🔍Course-Details/CourseDetails";
 import DetailLayout from "../Pages/🏠Home/Courses/🔍Course-Details/CourseDetailLayout/DetailLayout";
+import SignIn from "../Pages/Form/SignIn";
+import Register from "../Pages/Form/Register";
+import Private from "../Pages/🔒Private-Route/Private";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/course',
-        element:<DetailLayout></DetailLayout>,
+        element:<Private><DetailLayout></DetailLayout></Private>,
         children:[
           {
             path:'/course/:id',
@@ -25,6 +28,15 @@ const router = createBrowserRouter([
           }
         ]
       },
+      // Authenticaton
+      {
+        path:'/sign-in',
+        element:<SignIn></SignIn>
+      },
+      {
+        path:'/register',
+        element:<Register></Register>
+      }
     ],
     
   },

@@ -27,8 +27,8 @@ const CourseDetails = () => {
   } = selectedCourse;
 
   return (
-    <div className=" p-5">
-      <div className="grid space-y-2 grid-cols-2 gap-2 w-full py-4">
+    <div className="px-6">
+      <div className="grid space-y-2 grid-cols-2 gap-2 w-full ">
         <div className="flex-1 -rotate-2 ">
           <img className="w-full" src={imageUrl} alt="" />
           <div className="p-2 pb-11 bg-[#f5f5f5]">
