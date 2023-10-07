@@ -1,0 +1,9 @@
+.bg-img{
+      background:linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://images.pexels.com/photos/5227311/pexels-photo-5227311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      /* background-attachment: fixed; */
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* object-fit: cover; */
+      background-position: top;
+}
+

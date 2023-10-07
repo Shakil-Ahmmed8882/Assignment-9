@@ -6,6 +6,16 @@ import DetailLayout from "../Pages/🏠Home/Courses/🔍Course-Details/CourseDet
 import SignIn from "../Pages/Form/SignIn";
 import Register from "../Pages/Form/Register";
 import Private from "../Pages/🔒Private-Route/Private";
+import Profile from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Profile/Profile";
+import MyCourses from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/My-courses/MyCourses";
+import Syllabus from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Syllabus/Syllabus";
+import Events from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Events/Events";
+import Blog from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Blog/Blog";
+import Instructors from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Instructors/Instructors";
+import FAQ from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/FAQ/FAQ";
+import Certification from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Certification/Certification";
+import Feedback from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Feedback/Feedback";
+import HelpCenter from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Help-Center/HelpCenter";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +35,51 @@ const router = createBrowserRouter([
           {
             path:'/course/:id',
             element:<CourseDetails></CourseDetails>
-          }
+          },
+          {
+            path:'/course/profile',
+            element:<Profile></Profile>
+          },
+          {
+            path:'/course/myCourse',
+            element:<MyCourses></MyCourses>
+          },
+          {
+            path:'/course/syllabus',
+            element:<Syllabus></Syllabus>
+          },
+          {
+            path:'/course/events',
+            element:<Events></Events>
+          },
+          {
+            path:'/course/blog',
+            element:<Blog></Blog>
+          },
+          {
+            path:'/course/instructors',
+            element:<Instructors></Instructors>
+          },
+          {
+            path:'/course/FAQ',
+            element:<FAQ></FAQ>
+          },
+          {
+            path:'/course/certification',
+            element:<Certification></Certification>
+          },
+          {
+            path:'/course/feedback',
+            element:<Feedback></Feedback>
+          },
+          {
+            path:'/course/help-center',
+            element:<HelpCenter></HelpCenter>
+          },
+          {
+            path:'/course/profile',
+            element:<Profile></Profile>
+          },
         ]
       },
       // Authenticaton
@@ -36,7 +90,8 @@ const router = createBrowserRouter([
       {
         path:'/register',
         element:<Register></Register>
-      }
+      },
+
     ],
     
   },
