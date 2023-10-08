@@ -1,20 +1,43 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../utils/UseContext";
+import { useState } from "react";
+import { doesNotContainCapitalLetter, doesNotContainSpecialCharacter, isShorterThanSixCharacters } from "../../utils/Validation";
 
 const SignIn = () => {
   const { logIn,googleSignIn } = useAuth();
+  const [success,setSuccess] = useState('')
+  const [error,setError] = useState('')
   const navigate = useNavigate()
   const location = useLocation()
+  
+
 // || LOGIN HANDLER
   const handleLogin = (e) => {
+    
     e.preventDefault();
     const frmData = new FormData(e.target);
     const email = frmData.get("email");
     const password = frmData.get("password");
+    
+    // Validation
 
-    logIn(email, password)
+if (isShorterThanSixCharacters(password)) {
+  setError('Password must be at least 6 characters long.');
+  return;
+}
+else if (doesNotContainSpecialCharacter(password)) {
+  setError('Password must contain at least one special character.');
+  return;
+}
+else if (doesNotContainCapitalLetter(password)) {
+  setError('Password must contain at least one capital letter.');
+  return;
+}
+
+
+      logIn(email, password)
       .then(() => navigate(location.state? location.state: '/'))
-      .catch((err) => console.log(err.message));
+      .catch((err) => setError(err.message));
   };
 
 
@@ -62,6 +85,9 @@ const SignIn = () => {
                 className="input max-w-full"
               />
             </div>
+          </div>
+          <div>
+            <p className="text-red-400">{error && error}</p>
           </div>
           <div className="form-field">
             <div className="form-control justify-between">

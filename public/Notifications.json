@@ -1,0 +1,32 @@
+[
+        {
+          "id": 1,
+          "type": "booking",
+          "content": "Your booking for the 'DevOps Workshop' on 2023-10-20 has been confirmed.",
+          "timestamp": "2023-10-15T10:30:00Z",
+          "read": false
+        },
+        {
+          "id": 2,
+          "type": "message",
+          "content": "You have a new message from the instructor of 'Leadership Development'.",
+          "timestamp": "2023-10-14T15:45:00Z",
+          "read": true
+        },
+        {
+          "id": 3,
+          "type": "update",
+          "content": "New courses have been added to our catalog. Check them out!",
+          "timestamp": "2023-10-12T08:00:00Z",
+          "read": false
+        },
+        {
+          "id": 4,
+          "type": "booking",
+          "content": "Reminder: Your booking for the 'Graphic Design Workshop' is tomorrow.",
+          "timestamp": "2023-11-21T16:15:00Z",
+          "read": false
+        }
+]
+
+    

@@ -17,6 +17,8 @@ import Feedback from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Contai
 import HelpCenter from "../Pages/🏠Home/Courses/🔍Course-Details/detail-Container/Help-Center/HelpCenter";
 import Courses from "../Pages/🏠Home/Courses/Courses";
 import FAQ from "../Pages/🏠Home/FAQ";
+import MyBookings from "../Pages/🔒Private-Route/My-Bookings/MyBookings";
+import Notifications from "../Pages/🔒Private-Route/Notifications";
 
 const router = createBrowserRouter([
   {
@@ -81,6 +83,14 @@ const router = createBrowserRouter([
             path:'/course/profile',
             element:<Profile></Profile>
           },
+          {
+            path:'/course/my-bookings',
+            element:<Private><MyBookings></MyBookings></Private>
+          },
+          {
+            path:'/course/notifications',
+            element:<Private><Notifications></Notifications></Private>
+          },
         ]
       },
       {
@@ -100,6 +110,7 @@ const router = createBrowserRouter([
     ],
     
   },
+
   // 404
   {
     path:'*',
