@@ -20,16 +20,17 @@ const SignIn = () => {
     const password = frmData.get("password");
     
     // Validation
+    console.log(password.length < 6)
 
-if (isShorterThanSixCharacters(password)) {
+if(password.length < 6) {
   setError('Password must be at least 6 characters long.');
   return;
 }
-else if (doesNotContainSpecialCharacter(password)) {
+ if (doesNotContainSpecialCharacter(password)) {
   setError('Password must contain at least one special character.');
   return;
 }
-else if (doesNotContainCapitalLetter(password)) {
+ if (doesNotContainCapitalLetter(password)) {
   setError('Password must contain at least one capital letter.');
   return;
 }
@@ -49,7 +50,7 @@ else if (doesNotContainCapitalLetter(password)) {
   }
 
   return (
-    <div className="flex">
+    <div className="flex pt-11">
       <form
         onSubmit={handleLogin}
         className="mx-auto flex w-full max-w-lg flex-col rounded-xl border border-border bg-backgroundSecondary p-4 sm:p-20">
@@ -152,7 +153,7 @@ else if (doesNotContainCapitalLetter(password)) {
           </div>
         </div>
       </form>
-      <div>
+        <div className="hidden md:block">
         <img
           className="w-[100%] h-[100%]"
           src="https://img.freepik.com/free-vector/illustration-cartoon-female-user-entering-login_241107-682.jpg?size=626&ext=jpg"

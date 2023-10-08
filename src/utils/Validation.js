@@ -1,5 +1,5 @@
 const doesNotContainCapitalLetter = (password) => {
-      const noCapitalLetterRegex = /^(?![A-Z]).*$/;
+      const noCapitalLetterRegex = !/^(?![A-Z]).*$/;
       return noCapitalLetterRegex.test(password);
     };
 

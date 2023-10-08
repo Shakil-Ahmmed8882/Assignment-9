@@ -15,7 +15,7 @@ const FAQ = () => {
   return (
     <div>
       <h1 className=" text-3xl md:text-6xl font-bold md:text-center pb-6">FAQ</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 h-[80vh]">
+      <div className="grid grid-cols-1 md:grid-cols-2 ">
       
       <div>
       {FAQS?.slice(0,5).map((FAQ, idx) => {

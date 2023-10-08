@@ -1,14 +1,35 @@
-const Banner = () => {
-  return (
-      <div className="flex">
-        <div>
-          <img src="https://th.bing.com/th/id/OIP.nv9g-1pv95SNmT7Lsj26HwHaE7?pid=ImgDet&rs=1" alt="" />
-        </div>
-          <img className="w-90" src="https://th.bing.com/th/id/R.479411e5f3a9eecd2d931df4fbcfb105?rik=KlOGyMSfL4%2baWA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-n1YIywh3oHw%2fTnebOwo3FFI%2fAAAAAAAAAeg%2fO-2ACPQjy-Q%2fs1600%2fCool%2bFlower%2bWallpapers%2b%2525281%252529.jpg&ehk=i6S0rnw%2bcMi4hRz0stP5Iuke3nCUxcWJh5YwUBhLJ6M%3d&risl=&pid=ImgRaw&r=0" alt="" />
-        <div>
+import bannerImg from '../../../../src/assets/img/banner.png'
 
-        </div>
-      </div>
-  );
+const Banner = () => {
+  const studentReviews = [
+    {
+      name: "Alice Johnson",
+      email: "alice@example.com",
+      says: "I had an amazing learning experience at Skillery. The instructors were knowledgeable, and the course content was very comprehensive."
+    },
+    {
+      name: "Bob Smith",
+      email: "bob@example.com",
+      says: "Skillery offers top-notch courses with hands-on projects. It helped me gain practical skills that are valuable in my career."
+    },
+    {
+      name: "Ella Wilson",
+      email: "ella@example.com",
+      says: "I highly recommend Skillery to anyone looking to improve their skills. The support from the community and mentors is fantastic."
+    },
+    {
+      name: "David Brown",
+      email: "david@example.com",
+      says: "Skillery has a user-friendly platform, and the courses are well-structured. I'm glad I chose Skillery for my online learning journey."
+    }
+  ];
+  
+  // You can use this updated `studentReviews` array with different names in your application.
+
+  
+  return (<div className="w-full banner-bg h-[80vh] relative">
+    <img className='w-full h-full object-cover object-top' src={bannerImg} alt="" />
+
+  </div>);
 };
 export default Banner;

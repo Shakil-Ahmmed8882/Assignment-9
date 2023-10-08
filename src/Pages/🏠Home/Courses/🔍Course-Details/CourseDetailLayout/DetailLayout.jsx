@@ -5,7 +5,7 @@ import '../../Course.css'
 const DetailLayout = () => {
       return (
             <div className="flex w-full h-[100vh]  sticky top-0 py-4">
-                        <div className="flex flex-col black-bg-side-bar w-[280px] ">
+                        <div className=" hidden md:flex flex-col black-bg-side-bar w-[280px] ">
                         <div className="flex flex-col h-screen overflow-auto justify-evenly p-4 space-y-2">
                         <NavLink to='/course/profile' className='p-3 bg-[#222222] text-white '>Profile</NavLink>
                         <NavLink to='/course/myCourse' className='p-3 bg-[#222222] text-white '>My Courses</NavLink>

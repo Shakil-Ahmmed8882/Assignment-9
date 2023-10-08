@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import bell from '../../../src/assets/img/bg-color-bell.png'
 
 const Notifications = () => {
   const [notifications, setNotifications] = useState([]);
@@ -16,13 +17,14 @@ const Notifications = () => {
   }, []);
 
   return (
-    <div>
+    <div className="p-5 space-y-3">
+      <img className="-rotate-12 w-32" src={bell} alt="" />
       <h1 className="text-6xl font-bold">Notifications Page</h1>
       {notifications.length > 0 ? (
-        <ul>
+        <ul className="grid grid-cols-2">
           {notifications.map((notification) => (
             <li key={notification.id}>
-              <div>
+              <div className="space-y-1">
                 <p>Type: {notification.type}</p>
                 <p>Content: {notification.content}</p>
                 <p>Timestamp: {notification.timestamp}</p>
