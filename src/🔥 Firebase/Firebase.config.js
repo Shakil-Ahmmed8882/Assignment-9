@@ -8,12 +8,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAu-GrU1tgm-xcP7_jiTGEOL4W9Wm-jGq8",
-  authDomain: "skillery-c6945.firebaseapp.com",
-  projectId: "skillery-c6945",
-  storageBucket: "skillery-c6945.appspot.com",
-  messagingSenderId: "565900289104",
-  appId: "1:565900289104:web:0af5c6efe58bfe42ca5d55"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
