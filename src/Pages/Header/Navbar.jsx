@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="md:flex items-center border-b h-14 py-8 justify-between px-3">
-        <div className="navbar-start">
+        <div className="relative -top-5 md:static md:navbar-start">
           <h1 className="text-2xl font-bold">
             Skil<span className="text-primary-clr text-3xl">lery</span>
           </h1>
@@ -36,7 +36,7 @@ const Navbar = () => {
           <NavLink to="/courses">Courses</NavLink>
           {user && (
             <>
-              <NavLink to="/course/my-bookings">My-Bookings</NavLink>
+              <NavLink to="/course/my-bookings">Bookings</NavLink>
               <div className="flex gap-1 items-center">
                 <img src={bell} className="w-6" alt="" />
                 <NavLink to="/course/notifications">Notifications</NavLink>
@@ -74,8 +74,8 @@ const Navbar = () => {
       </div>
       <div
         onClick={() => setOpenMenu(!openMenu)}
-        className=" md:hidden flex absolute top-5 right-2">
-        <img className="w-8" src={menu} alt="" />
+          className=" md:hidden flex absolute top-5 right-6">
+        <img className="w-7" src={menu} alt="" />
       </div>
       <div
         className={`flex flex-col md:hidden absolute right-0 bg-black w-[300px] text-white z-20 justify-evenly items-center space-y-11 py-8 ${
@@ -86,7 +86,7 @@ const Navbar = () => {
         {user && (
           <>
             <NavLink to="/course/profile">Profile</NavLink>
-            <NavLink to="/course/my-bookings">My-Bookings</NavLink>
+            <NavLink to="/course/my-bookings">Bookings</NavLink>
             <NavLink to="/course/notifications">Notifications</NavLink>
           </>
         )}

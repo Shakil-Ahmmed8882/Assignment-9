@@ -17,15 +17,15 @@ const Notifications = () => {
   }, []);
 
   return (
-    <div className="p-5 space-y-3">
+    <div className="md:p-5 space-y-3">
       <img className="-rotate-12 w-32" src={bell} alt="" />
-      <h1 className="text-6xl font-bold">Notifications Page</h1>
+      <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold pl-2">Notifications </h1>
       {notifications.length > 0 ? (
-        <ul className="grid grid-cols-2">
+        <ul className="grid lg:grid-cols-2 gap-x-4 gap-y-8 md:gap-y-6">
           {notifications.map((notification) => (
-            <li key={notification.id}>
+            <li key={notification.id} className="bg-[#9ae34115] p-3 rounded shadow-lg">
               <div className="space-y-1">
-                <p>Type: {notification.type}</p>
+                  <p className="font-bold text-[20px] pb-1">Type: {notification.type}</p>
                 <p>Content: {notification.content}</p>
                 <p>Timestamp: {notification.timestamp}</p>
               </div>
