@@ -32,9 +32,9 @@ const WhyToChooseUs = () => {
 
 
       return (
-            <div className=' bg-[#f1f1f1] py-9 px-11'>
-                        <h1 className="text-6xl md:text-4xl text-center pt-5 pb-4 font-bold mb-4">Why people choose Skillery?</h1>
-            <div className="w-full  flex gap-5">
+            <div className=' bg-[#f1f1f1] py-9 px-3 md:px-11'>
+                        <h1 className="text-2xl sm:text-3xl text-left md:text-4xl lg:text-5xl py-3 md:text-center pt-5 pb-4 font-bold mb-4">Why people choose Skillery?</h1>
+            <div className="w-full  flex md:gap-5">
                   <div className='flex-1'>
                         <div  className='grid md:grid-cols-2 gap-5 items-stretch'>
                               {

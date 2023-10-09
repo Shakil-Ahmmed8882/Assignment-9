@@ -43,7 +43,7 @@ const MyBookings = () => {
       {bookings.length > 0 ? (
         <ul className="booking-list flex-1 mb-8 gap-3 grid-cols-1 sm:grid-cols-2  grid md:grid-cols-2">
           {bookings.map((booking) => (
-            <li key={booking.id} className={`bg-[#e1e1e169] my-2 md:bg-transparent  booking-item md:m-2 space-y-1 border p-3 border-[#e5e5e5]`} >
+            <li key={booking.id} className={` my-2 md:bg-transparent  booking-item md:m-2 space-y-1 border p-3 border-[#e5e5e5]`} >
               <h3 className='font-bold mt-1 mb-2'>{booking.title}</h3>
               <p>Date: {booking.date}</p>
               <p>Time: {booking.time}</p>
