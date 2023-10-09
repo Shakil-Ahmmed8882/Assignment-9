@@ -38,7 +38,7 @@ const SignIn = () => {
   
 
 
-logIn(email, password)
+  logIn(email, password)
   .then((res) => {
     console.log(res.user);
     toast.success('Successfully Signed in');

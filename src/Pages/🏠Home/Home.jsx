@@ -27,8 +27,8 @@ const Home = () => {
       <div data-aos="fade-left">
         <Banner></Banner>
       </div>
-      <div className="bg-white mt-20 py-7">
-      <h1 className=" text-3xl md:text-6xl font-bold md:text-center pb-6">
+      <div className="mt-20 py-7  gap-2 bg-gray-100">
+      <h1 className="text-3xl md:text-6xl font-bold md:text-center pb-6">
           Courses
         </h1>
       <Courses></Courses>
@@ -36,9 +36,7 @@ const Home = () => {
       <div data-aos="fade-right">
         <WhyToChooseUs></WhyToChooseUs>
       </div>
-      <div data-aos="fade-up">
-        <FAQ></FAQ>
-      </div>
+      <FAQ></FAQ>
       <Footer></Footer>
     </div>
   );

@@ -73,9 +73,7 @@ const AuthProvider = ({ children }) => {
 
       return ()=> unSubscribe()
     },[])
-
-
-    console.log(courseLoading)
+  
 
   const data = {
     courses,
@@ -89,7 +87,6 @@ const AuthProvider = ({ children }) => {
     loading,
   }
 
-  console.log(courseLoading)
 
   return <AuthContext.Provider value={data}>{children}</AuthContext.Provider>;
 };

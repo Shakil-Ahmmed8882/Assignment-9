@@ -37,8 +37,6 @@ export default function Slider() {
         className="mySwiper"
       >
         <SwiperSlide><img className='w-full bg-blend-darken h-full object-top' src={bannerImg} alt="" /></SwiperSlide>
-        <SwiperSlide><img className='w-full h-full object-top' src="https://i.ibb.co/Rj7pjMt/slider1.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide><img className='w-full h-full object-top' src="https://i.ibb.co/xXqFHrX/slider2.jpg" alt="" /></SwiperSlide>
         <SwiperSlide><img className='w-full h-full object-center' src="https://i.ibb.co/kMRm1vt/slider3.jpg" alt="" /></SwiperSlide>
         <SwiperSlide><img className='w-full h-full object-center' src="https://i.ibb.co/NmCNQV5/slider4.jpg" alt="" /></SwiperSlide>
         <div className="autoplay-progress" slot="container-end">

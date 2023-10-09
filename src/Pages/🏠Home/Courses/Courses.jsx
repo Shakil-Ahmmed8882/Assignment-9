@@ -30,7 +30,7 @@ const Courses = () => {
   return (
     <div className="relative">
       
-      <div className="grid grid-cols-4 w-full gap-2 bg-gray-100">
+      <div className="grid grid-cols-4 w-full">
         <div className="col-span-1 bg-[#161616] hidden md:block">
           {courses?.map((course) => (
             <p
