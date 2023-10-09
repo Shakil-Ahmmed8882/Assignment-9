@@ -43,9 +43,7 @@ console.log(courseLoading)
     syllabus,
     time,
     location,
-    speaker,
     learningObjectives,
-    reviews,
     //     materials,
     //     calendarDate,
     //     certification,
@@ -112,27 +110,8 @@ console.log(courseLoading)
           </div>
         </div>
       </div>
-      {/* user comment */}
-      <div>
-        <h1 className="text-2xl md:text-3xl font-bold pt-8">Student&apos;s Comments</h1>
-        <div>
-          <div className="md:flex gap-2 pt-3 pb-8">
-            {reviews?.map((review, idx) => {
-              const { user, rating, comment } = review;
-              return (
-                <div
-                  className="bg-black text-white rounded-lg p-4 space-y-1 mt-3 shadow"
-                  key={idx}>
-                  <h1>{user}</h1>
-                  <p>Ratings: {rating}</p>
-                  <p>comment: {comment}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-      {/* Tutors */}
+
+      
     </div>
   );
 };

@@ -6,6 +6,7 @@
         "date": "2023-10-20",
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
+        "isPaid":false,
         "speaker": {
           "name": "DevOps Expert",
           "image": "instructor_image_url_here",
@@ -53,6 +54,7 @@
         "date": "2023-10-20",
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
+        "isPaid":true,
         "speaker": {
           "name": "Leadership Coach",
           "image": "instructor_image_url_here",
@@ -101,6 +103,7 @@
         "date": "2023-10-20",
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
+        "isPaid":false,
         "speaker": {
           "name": "Data Scientist",
           "image": "instructor_image_url_here",
@@ -148,6 +151,7 @@
         "date": "2023-10-20",
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
+        "isPaid":true,
         "speaker": {
           "name": "Graphic Design Expert",
           "image": "instructor_image_url_here",
@@ -193,6 +197,7 @@
         "title": "Public Speaking",
         "imageUrl": "https://i.ibb.co/x8DT9Nb/publick-speaking.png",
         "date": "2023-10-20",
+        "isPaid":false,
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
         "speaker": {
@@ -242,6 +247,7 @@
         "date": "2023-10-20",
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
+        "isPaid":true,
         "speaker": {
           "name": "Communication Expert",
           "image": "instructor_image_url_here",

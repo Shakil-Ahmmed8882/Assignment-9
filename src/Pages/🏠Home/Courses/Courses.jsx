@@ -40,7 +40,7 @@ const Courses = () => {
             </p>
           ))}
         </div>
-        <div className={`cols-3-auto col-span-4 md:col-span-3 px-4`}>
+        <div className={`cols-3-auto col-span-4 md:col-span-3 px-4 py-8`}>
           {courses?.map((course) => (
             <Course key={course.id} course={course}></Course>
           ))}

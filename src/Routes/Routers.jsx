@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Link, createBrowserRouter } from "react-router-dom";
 import Root from "../Pages/🟢 Root/Root";
 import Home from "../Pages/🏠Home/Home";
 import CourseDetails from "../Pages/🏠Home/Courses/🔍Course-Details/CourseDetails";
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    // errorElement: <div>Error</div>,
+    errorElement: <div>Error</div>,
     children: [
       {
         path: "/",
@@ -114,7 +114,13 @@ const router = createBrowserRouter([
   // 404
   {
     path:'*',
-    element:<h1 className="text-9xl font-bold">404</h1>
+    element:<div className="w-full h-screen flex-col gap-3 flex items-center justify-center">
+      <h1 className="text-9xl font-bold">404</h1>
+      <p>Oppss!! That page can&apos;t be found</p>
+      <Link to='/'>
+      <button className="btn outline">go to home</button>
+      </Link>
+    </div>
   }
 ]);
 

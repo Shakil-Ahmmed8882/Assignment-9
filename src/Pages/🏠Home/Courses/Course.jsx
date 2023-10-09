@@ -8,19 +8,20 @@ import '@smastrom/react-rating/style.css'
 import { Link } from 'react-router-dom';
 
 const Course = ({ course }) => {
-  const { id,title, imageUrl, reviews,duration } = course;
+  const { id,title, imageUrl,isPaid, reviews,duration } = course;
   const {rating} = reviews[0]
+
 
 
 
 
   return (
     <div className='bg-white p-3 rounded space-y-3 ' >
-      <div className='flex medium-style gap-2'>
+      <div className='flex medium-style gap-2 items-center'>
       <h1 className='flex-1 font-bold'>{title}</h1>
       <div className='relative'>
-      <img className='w-[140px]  flex-1 rounded-lg' src={imageUrl} alt="" />
-      <span className='absolute right-2 rounded -bottom-3 md:top-[53px] md:right-1 bg-green-600 text-white px-3 py-1 '>Free</span>
+      <img className='w-[140px] h-[70px] flex-1 rounded-lg' src={imageUrl} alt="" />
+      <span className={`absolute right-2 rounded -bottom-3 md:top-[53px] md:right-1 ${isPaid?'bg-primary-clr text-black':'bg-[#ff5353] text-white'} text-white px-3 py-1 `}>{isPaid?'Paid':'Free'}</span>
       </div>
       </div>
 
