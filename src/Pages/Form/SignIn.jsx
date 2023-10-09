@@ -1,18 +1,18 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../utils/UseContext";
 import { useState } from "react";
-import { doesNotContainCapitalLetter, doesNotContainSpecialCharacter, isShorterThanSixCharacters } from "../../utils/Validation";
+import { toast} from 'react-hot-toast';
 
 const SignIn = () => {
   const { logIn,googleSignIn } = useAuth();
-  const [success,setSuccess] = useState('')
-  const [error,setError] = useState('')
   const navigate = useNavigate()
   const location = useLocation()
+  const [error,setError] = useState('')
   
-
-// || LOGIN HANDLER
+  
+  // || LOGIN HANDLER
   const handleLogin = (e) => {
+    setError('')
     
     e.preventDefault();
     const frmData = new FormData(e.target);
@@ -20,33 +20,46 @@ const SignIn = () => {
     const password = frmData.get("password");
     
     // Validation
-    console.log(password.length < 6)
+      // Password validation
+      if (password.length < 6) {
+        setError("Password must be at least 6 characters long.");
+        return;
+      }
+  
+      if (!/^[a-zA-Z0-9]*$/.test(password)) {
+        setError("Password must contain at least one special character.");
+        return;
+      }
+  
+      if (!/^(?=.*[A-Z]).*$/.test(password)) {
+        setError("Password must contain at least one capital letter.");
+        return;
+      }
+  
 
-if(password.length < 6) {
-  setError('Password must be at least 6 characters long.');
-  return;
-}
- if (doesNotContainSpecialCharacter(password)) {
-  setError('Password must contain at least one special character.');
-  return;
-}
- if (doesNotContainCapitalLetter(password)) {
-  setError('Password must contain at least one capital letter.');
-  return;
-}
 
+logIn(email, password)
+  .then((res) => {
+    console.log(res.user);
+    toast.success('Successfully Signed in');
+    navigate(location.state ? location.state : '/');
+  })
+  .catch((err) => {
+    console.error('Error occurred during login:', err); // Log the error to the console
+    toast.error(err.toString()); // Display the error message
+  });
 
-      logIn(email, password)
-      .then(() => navigate(location.state? location.state: '/'))
-      .catch((err) => setError(err.message));
   };
 
 
   // || SOCIAL SIGN IN
   const handleMediaSignIn = media => {
       media()
-      .then(() => navigate(location.state? location.state: '/'))
-      .catch((err) => console.log(err.message));
+      .then(() => {
+        toast.success('Successfully Signed in with google');
+        navigate(location.state? location.state: '/')
+      })
+      .catch((err) => toast.error(err));
   }
 
   return (

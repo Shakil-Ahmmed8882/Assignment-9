@@ -1,10 +1,32 @@
-import useAuth from "../../../utils/UseContext";
+import axios from "axios";
 import Course from "./Course";
 import "./course.css";
 import courseBg from "../../../assets/img/Course-icon.png";
+import { useEffect, useState } from "react";
 
 const Courses = () => {
-  const { courses } = useAuth();
+  const [courses, setCourses] = useState([])
+  const [courseLoading,setCourseLoading] = useState(true)
+
+
+  useEffect(() => {
+    // Fetch courses when the component mounts
+    axios.get("/Courses.json")
+    .then((response) => {
+      setCourses(response.data);
+      setCourseLoading(false)
+    })
+    .catch((error) => {
+      console.log(error.message);
+    });
+  }, []);
+
+
+
+
+  if(courseLoading){
+    return <div className="w-full h-screen flex justify-center items-center"><span className="loading loading-spinner loading-lg"></span></div> 
+  }
   return (
     <div className="relative">
       <div className="">

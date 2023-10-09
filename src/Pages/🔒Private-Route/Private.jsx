@@ -7,7 +7,7 @@ const Private = ({children}) => {
       const location = useLocation()
 
       if(loading){
-            return <p>Loading ...</p>
+            return <span className="loading loading-spinner loading-lg"></span>
       }
       if(user){
             return children

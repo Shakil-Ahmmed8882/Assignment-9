@@ -24,7 +24,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement: <div>Error</div>,
+    // errorElement: <div>Error</div>,
     children: [
       {
         path: "/",
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         children:[
           {
             path:'/course/:id',
-            element:<CourseDetails></CourseDetails>
+            element:<Private><CourseDetails></CourseDetails></Private>
           },
           {
             path:'/course/profile',

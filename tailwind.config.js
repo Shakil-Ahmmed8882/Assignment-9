@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {},
     colors:{
-      'primary-clr':'#db2777'
+      'primary-clr':'#99E341'
     }
   },
   plugins: [require("daisyui")],

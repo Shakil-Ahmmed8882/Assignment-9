@@ -6,6 +6,7 @@ import './course.css'
 import '@smastrom/react-rating/style.css'
 
 import { Link } from 'react-router-dom';
+
 const Course = ({ course }) => {
   const { id,title, imageUrl, reviews,duration } = course;
   const {rating} = reviews[0]
@@ -22,6 +23,7 @@ const Course = ({ course }) => {
       <span className='absolute right-2 rounded -bottom-3 md:top-[53px] md:right-1 bg-green-600 text-white px-3 py-1 '>Free</span>
       </div>
       </div>
+
       <div className='flex gap-3 pt-4'>
       <p className='flex gap-2 font-bold'><Rating style={{maxWidth:'100px'}} value={rating}></Rating>.{rating}</p>
       <p>521k learners</p>
@@ -33,7 +35,7 @@ const Course = ({ course }) => {
       <li className='flex gap-1 text-gray-500 mt-2'> <span><BsCheck className='text-green-400 font-bold text-2xl'></BsCheck></span>Effective Syllabous</li>
       </ul>
       <Link to={`/course/${id}`}>
-      <button className='px-8 bg-green-400 rounded bg-primary-clr text-white py-2 mt-4'>View course</button>
+      <button className='px-8 bg-[#000000] rounded  text-white py-2 mt-4'>View course</button>
       </Link>
     </div>
   );

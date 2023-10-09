@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
 import auth from "../🔥 Firebase/Firebase.config";
-import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 
 export const AuthContext = createContext(null);
 //|| PROVIDER ...
@@ -14,23 +14,34 @@ const AuthProvider = ({ children }) => {
   const [courses, setCourses] = useState([]);
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [courseLoading,setCourseLoading] = useState(true)
+
   //get courses
   useEffect(() => {
     // Fetch courses when the component mounts
     axios.get("Courses.json")
       .then((response) => {
         setCourses(response.data);
+        setCourseLoading(false)
       })
       .catch((error) => {
         console.log(error.message);
       });
-  }, []);
+  }, [courseLoading]);
 
     // AUTHENTICATION || 
    // CREATE USER 
     const createUser = (email,password) => {
       setLoading(true)
       return createUserWithEmailAndPassword(auth, email, password)
+    }
+
+    // UPDATATE PROFILE
+    const updateUserProfile = (name,imgUrl) => {
+      return updateProfile(auth.currentUser,{
+        displayName: name,
+        photoURL: imgUrl
+      })
     }
 
     // || SIGN IN
@@ -53,9 +64,9 @@ const AuthProvider = ({ children }) => {
 
     // || TRACK USER
     useEffect(()=> {
-      const unSubscribe = onAuthStateChanged(auth, (currentUser)=> {
-        if(currentUser){
-          setUser(currentUser)
+      const unSubscribe = onAuthStateChanged(auth, (user)=> {
+        if(user){
+          setUser(user)
         }
         setLoading(false)
       })
@@ -64,16 +75,21 @@ const AuthProvider = ({ children }) => {
     },[])
 
 
+    console.log(courseLoading)
 
   const data = {
     courses,
     createUser,
+    updateUserProfile,
     logIn,
     logOut,
     googleSignIn,
     user,
-    loading
+    courseLoading,
+    loading,
   }
+
+  console.log(courseLoading)
 
   return <AuthContext.Provider value={data}>{children}</AuthContext.Provider>;
 };

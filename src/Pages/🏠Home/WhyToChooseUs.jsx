@@ -40,7 +40,7 @@ const WhyToChooseUs = () => {
                               {
                                     reasons?.map((reason, idx) => {
                                           const {title,description} = reason;
-                                          return <article className=' text-center rounded-lg flex bg-white p-3 hover:-translate-y-1 transition-all shadow ' key={idx}>
+                                          return <article className=' text-center rounded-lg flex bg-white p-3 hover:outline outline-[#dbdbdb] outline-[2px] shadow ' key={idx}>
                                                 <div className='space-y-1'>
                                                 <img className='mx-auto border-4 w-[70px] h-[70px] border-[#bfbfbf35] rounded-full p-1' src={arr[idx]} alt="" />
                                                 <h1 className='text-[18px] font-bold'>{title}</h1>

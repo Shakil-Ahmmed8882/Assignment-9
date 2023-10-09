@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Navigate } from "react-router-dom";
 import useAuth from "../../utils/UseContext";
 import menu from "../../../src/assets/img/menu.png";
 import { useState } from "react";
@@ -7,12 +7,21 @@ import bell from "../../../src/assets/img/notification-bell.png";
 const Navbar = () => {
   const { user, logOut } = useAuth();
   const [openMenu, setOpenMenu] = useState(false);
+  const [isLogout, setIsLogOut] = useState(false)
+
 
   const handleLogOut = () => {
+    
     logOut()
-      .then(() => console.log("logOut"))
+      .then(() => {
+        <Navigate to='/'></Navigate>
+        setIsLogOut(true)
+
+      })
       .catch((err) => console.error(err));
   };
+
+
 
   return (
     <div>
@@ -34,30 +43,30 @@ const Navbar = () => {
               </div>
             </>
           )}
-          {user ? (
+          {user? (
             <div className="dropdown hidden md:flex">
               <label className="" tabIndex="0">
                 <img
                   className="w-[40px] h-[40] object-cover rounded-full"
-                  src={user?.photoURL}
+                  src={user.photoURL?user.photoURL:'https://th.bing.com/th/id/OIP.Cl56H6WgxJ8npVqyhefTdQHaHa?pid=ImgDet&rs=1'}
                   alt=""
                 />
               </label>
-              <div className="dropdown-menu">
+              <div className="dropdown-menu p-5">
                 <Link to="/course/profile" className="dropdown-item text-sm">
                   Profile
                 </Link>
+                
 
                 <NavLink
                   onClick={handleLogOut}
-                  to="/sign-in"
-                  className="btn bg-primary-clr text-[#fff]">
+                  to="/sign-in">
                   Logout
                 </NavLink>
               </div>
             </div>
           ) : (
-            <NavLink to="/sign-in" className="btn bg-primary-clr text-[#fff]">
+            <NavLink to="/sign-in">
               Sign in
             </NavLink>
           )}
