@@ -2,7 +2,7 @@
       {
         "id": 1,
         "title": "DevOps",
-        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "imageUrl": "https://i.ibb.co/d7Q0YRK/devvv-Opppps.png",
         "date": "2023-10-20",
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
@@ -49,7 +49,7 @@
       {
         "id": 2,
         "title": "Leadership Development",
-        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "imageUrl": "https://i.ibb.co/nnVtzWj/leadership.jpg",
         "date": "2023-10-20",
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
@@ -85,6 +85,7 @@
         "registrationDeadline": "2023-10-15",
         "courseOverview": "This Leadership Development course focuses on leadership styles, team dynamics, and effective conflict resolution techniques.",
         "syllabus": {
+
           "modules": 6,
           "assignments": true,
           "quizzes": true
@@ -96,7 +97,7 @@
       {
         "id": 3,
         "title": "Data Science",
-        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "imageUrl": "https://i.ibb.co/8j39CYk/datascience.jpg",
         "date": "2023-10-20",
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
@@ -143,7 +144,7 @@
       {
         "id": 4,
         "title": "Graphic Design",
-        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "imageUrl": "https://i.ibb.co/NZmZyRq/graphic-Design.jpg",
         "date": "2023-10-20",
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
@@ -190,7 +191,7 @@
       {
         "id": 5,
         "title": "Public Speaking",
-        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "imageUrl": "https://i.ibb.co/x8DT9Nb/publick-speaking.png",
         "date": "2023-10-20",
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
@@ -237,7 +238,7 @@
       {
         "id": 6,
         "title": "Communication Skills",
-        "imageUrl": "https://th.bing.com/th/id/OIP.ujsZAhPRm7Rw3hMFe5yNwQHaD3?pid=ImgDet&rs=1",
+        "imageUrl": "https://i.ibb.co/QnpR6V5/communication.jpg",
         "date": "2023-10-20",
         "time": "2:00 PM - 4:00 PM",
         "location": "Online",
