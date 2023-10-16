@@ -1,12 +1,5 @@
 1/
-javascript
-let greeting;
-greetign = {};
-console.log(greetign);
 
-A: {}
-B: ReferenceError: greetign is not defined
-C: undefined
 
 ## Answer (C)
 ------------------------------------------

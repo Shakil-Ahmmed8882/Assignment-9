@@ -47,11 +47,11 @@ const Register = () => {
       .catch((err) => console.log(err.message));
   };
   return (
-    <div>
-      <img src="" alt="" />
+    <div className="flex">
+
       <form
         onSubmit={handleSignUp}
-        className="mx-auto flex w-full max-w-lg flex-col rounded-xl border border-border bg-backgroundSecondary p-4 sm:p-20">
+        className="mx-auto mt-11 flex flex-1  max-w-lg flex-col rounded-xl border border-border bg-backgroundSecondary p-4 sm:p-20">
         <div className="flex w-full flex-col gap-2">
           <p className="text-3xl font-bold">Sign up</p>
         </div>
@@ -113,7 +113,7 @@ const Register = () => {
           </div>
           <div className="form-field pt-5">
             <div className="form-control justify-between">
-              <button type="submit" className="btn btn-primary w-full">
+              <button type="submit" className="btn btn-primary  w-full">
                 Sign up
               </button>
             </div>
@@ -129,6 +129,9 @@ const Register = () => {
           </div>
         </div>
       </form>
+        <div className=" w-[600px] hidden md:block">
+     <img className="w-full h-full object-cover" src="https://i.ibb.co/TTPfgZx/undraw-Access-account-re-8spm.png" alt="" />
+     </div>
     </div>
   );
 };

@@ -1,69 +1,56 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../utils/UseContext";
 import { useState } from "react";
-import { toast} from 'react-hot-toast';
+import { toast } from "react-hot-toast";
 
 const SignIn = () => {
-  const { logIn,googleSignIn } = useAuth();
-  const navigate = useNavigate()
-  const location = useLocation()
-  const [error,setError] = useState('')
-  
-  
+  const { logIn, googleSignIn } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [error, setError] = useState("");
+
   // || LOGIN HANDLER
   const handleLogin = (e) => {
-    setError('')
-    
+    setError("");
+
     e.preventDefault();
     const frmData = new FormData(e.target);
     const email = frmData.get("email");
     const password = frmData.get("password");
-    
+
     // Validation
-      // Password validation
-      if (password.length < 6) {
-        setError("Password must be at least 6 characters long.");
-        return;
-      }
-  
-      if (!/^[a-zA-Z0-9]*$/.test(password)) {
-        setError("Password must contain at least one special character.");
-        return;
-      }
-  
-      if (!/^(?=.*[A-Z]).*$/.test(password)) {
-        setError("Password must contain at least one capital letter.");
-        return;
-      }
-  
-
-
-  logIn(email, password)
-  .then((res) => {
-    console.log(res.user);
-    toast.success('Successfully Signed in');
-    navigate(location.state ? location.state : '/');
-  })
-  .catch((err) => {
-    console.error('Error occurred during login:', err); // Log the error to the console
-    toast.error(err.toString()); // Display the error message
-  });
-
+    // Password validation
+    logIn(email, password)
+      .then((res) => {
+        console.log(res.user);
+        toast.success("Successfully Signed in");
+        navigate(location.state ? location.state : "/");
+      })
+      .catch((err) => {
+        console.error("Error occurred during login:", err); // Log the error to the console
+        toast.error(err.toString()); // Display the error message
+      });
   };
 
-
   // || SOCIAL SIGN IN
-  const handleMediaSignIn = media => {
-      media()
+  const handleMediaSignIn = (media) => {
+    media()
       .then(() => {
-        toast.success('Successfully Signed in with google');
-        navigate(location.state? location.state: '/')
+        toast.success("Successfully Signed in with google");
+        navigate(location.state ? location.state : "/");
       })
       .catch((err) => toast.error(err));
-  }
+  };
 
   return (
     <div className="flex pt-11">
+      <div className="hidden md:block w-[560px]">
+        <img
+          className="w-[100%] h-[100%] ml-11 object-cover"
+          src="https://i.ibb.co/xGGftWr/undraw-Sign-in-re-o58h.png"
+          alt=""
+        />
+      </div>
       <form
         onSubmit={handleLogin}
         className="mx-auto flex w-full max-w-lg flex-col rounded-xl border border-border bg-backgroundSecondary p-4 sm:p-20">
@@ -118,7 +105,7 @@ const SignIn = () => {
           </div>
           <div className="form-field pt-5">
             <div className="form-control justify-between">
-              <button type="submit" className="btn btn-primary w-full">
+              <button type="submit" className="btn btn-primary bg-black w-full">
                 Sign in
               </button>
             </div>
@@ -137,7 +124,10 @@ const SignIn = () => {
             or continue with
           </div>
           <div className="flex w-full flex-col gap-2">
-            <button onClick={()=>handleMediaSignIn(googleSignIn)} type="button" className="btn gap-2 bg-gray-5">
+            <button
+              onClick={() => handleMediaSignIn(googleSignIn)}
+              type="button"
+              className="btn gap-2 bg-gray-5">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -166,13 +156,6 @@ const SignIn = () => {
           </div>
         </div>
       </form>
-        <div className="hidden md:block">
-        <img
-          className="w-[100%] h-[100%]"
-          src="https://img.freepik.com/free-vector/illustration-cartoon-female-user-entering-login_241107-682.jpg?size=626&ext=jpg"
-          alt=""
-        />
-      </div>
     </div>
   );
 };

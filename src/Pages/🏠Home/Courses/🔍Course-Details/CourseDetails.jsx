@@ -21,10 +21,6 @@ const CourseDetails = () => {
       console.log(error.message);
     });
   }, []);
-  
-  console.log(courses)
-
-console.log(courseLoading)
 
 
   if(courseLoading){
@@ -51,17 +47,14 @@ console.log(courseLoading)
   } = selectedCourse;
 
 
-  if (courseLoading) {
-    return <p>Loading...</p>;
-  }
 
 
   return (
-    <div className="md:px-6 md:p-7">
-      <div className="grid space-y-2 grid-cols-1 lg:grid-cols-2 pt-8 md:pt-0 gap-2 w-full ">
-        <div className="flex-1 lg:-rotate-2 p-3 ">
+    <div className="md:px-6 md:p-7 mb-32">
+      <div className="grid space-y-2 grid-cols-1 pb-8 lg:grid-cols-2 pt-8 md:pt-0 gap-2 w-full ">
+        <div className="flex-1 lg:-rotate-2 ">
           <img className="w-full" src={imageUrl} alt="" />
-          <div className="p-2 pb-11 bg-[#f5f5f5]">
+          <div className=" pb-11 p-3 shadow-xl ">
             <div className="text-3xl md:text-5xl font-bold pb-3 -pt-2">{title}</div>
             <p>
               {description} We are serious about your progress. If you commit
@@ -77,7 +70,7 @@ console.log(courseLoading)
             </p>
           </div>
         </div>
-        <div className="space-y-3 bg-[#000] lg:rotate-2 p-4 text-white">
+        <div className="space-y-3 bg-[#000] rounded-r-xl rounded-l-xl lg:rounded-none lg:rotate-2 p-4 text-white">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold pt-3">Course Details</h1>
           <p className="text-[#adadad]">
             Duration: <span>{duration}</span>
